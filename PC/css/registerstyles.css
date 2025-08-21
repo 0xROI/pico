@@ -1,0 +1,116 @@
+/* registerstyles.css */
+
+/* Custom styles for the Register page */
+
+/* Title styling */
+.card-title {
+    font-size: 2.5rem;
+    color: #ffffff; /* Bootstrap primary color */
+    margin-bottom: 5px;
+}
+
+/* Subheading styling */
+.card-subtitle {
+    font-size: 1.2rem;
+    color: #ffffff; /* Bootstrap secondary color */
+    margin-bottom: 7px;}
+
+    .jumbotron {
+    background-color: #007bff;
+    color: #ffffff;
+
+    
+}
+
+
+
+
+.center-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+}
+
+.registration-box {
+    
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #5a57fd18;
+    margin-bottom: 15px;
+    margin-top: 50px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-bottom: 1px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Style the button */
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+.login-text a {
+    
+    align-items: center;
+    color: #007bff;
+    text-decoration: none;
+  
+}
+
+.login-text a:hover {
+    text-decoration: underline;
+}
+
+.space {
+    margin-bottom: 20px;
+}
+
+.login-text{
+    text-align: center;
+}
+
+
+
+.jumbotron {
+    padding: 0.5rem 2rem
+}
+/* Add more custom styles as needed */

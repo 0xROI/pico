@@ -1,0 +1,108 @@
+/* External CSS file */
+body {
+    background-color: #f8f9fa;
+ }
+ 
+ .dashboard-container {
+    margin-top: 50px;
+    text-align: center;
+ }
+
+ /* dashboard.css */
+body {
+    display: none; /* Hide the body by default */
+ }
+ 
+ .container {
+    display: none; /* Hide the container by default */
+ }
+ 
+ /* Additional styles as needed */
+ 
+ /* Add custom styling for the tabs */
+#myTabs {
+    border-bottom: 1px solid #dee2e6;
+ }
+ 
+ #myTabs .nav-item {
+    border: 1px solid #dee2e6;
+    border-bottom: none;
+ }
+ 
+ #myTabs .nav-link {
+    border-radius: 0.25rem 0.25rem 0 0;
+    margin-bottom: -1px;
+ }
+ 
+ #myTabs .nav-link.active {
+    border-bottom: 1px solid #dee2e6;
+ }
+ 
+ #myTabsContent {
+    border: 1px solid #dee2e6;
+    border-radius: 0 0 0.25rem 0.25rem;
+    padding: 20px;
+ }
+ 
+ /* Additional styling for better visual separation */
+ .container.dashboard-container {
+    margin-top: 20px;
+ }
+ 
+ /* Adjust margin for better spacing on small screens */
+ @media (max-width: 768px) {
+    #myTabs .nav-link {
+       margin-bottom: 1px; /* Adjust as needed */
+    }
+ }
+ 
+ /* Add custom styling for the tabs */
+#myTabsSection {
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    overflow: hidden;
+    
+ }
+ 
+ #myTabs {
+    border-bottom: 1px solid #dee2e6;
+ }
+ 
+ #myTabs .nav-item {
+    border: 1px solid #dee2e6;
+    border-bottom: none;
+    
+ }
+ 
+ #myTabs .nav-link {
+    border-radius: 0.25rem 0.25rem 0 0;
+    margin-bottom: -1px;
+   
+ }
+ 
+ #myTabs .nav-link.active {
+    border-bottom: 1px solid #dee2e6;
+ }
+ 
+ #myTabsContent {
+    
+    border: 1px solid #dee2e6;
+    border-radius: 0 0 0.25rem 0.25rem;
+    padding: 20px;
+ }
+ 
+ /* Additional styling for better visual separation */
+ .container.dashboard-container {
+    margin-top: 20px;
+ }
+ 
+ /* Adjust margin for better spacing on small screens */
+ @media (max-width: 768px) {
+    #myTabs .nav-link {
+       margin-bottom: 1px; /* Adjust as needed */
+    }
+    
+ }
+
+/* Add this to your CSS file */
+

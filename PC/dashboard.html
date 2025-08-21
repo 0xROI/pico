@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard </title>
+
+    <!-- Include Firebase JavaScript SDK -->
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.0.0/firebase-database.js"></script>
+
+    <!-- Your Firebase configuration script -->
+    <script type="module" src="js/firebaseConfig.js" defer></script>
+
+    <!-- Link to Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Link to custom styles -->
+    <link rel="stylesheet" href="css/dashboard.css"> <!-- Link to your existing CSS file -->
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <!-- Navbar -->
+<nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand mb-0 h1" href="/PC/index.html">picoApp</a>
+        <button id="logoutBtn" class="btn btn-outline-light">Logout</button>
+    </div>
+</nav>
+
+
+    <div class="container dashboard-container">
+        <div class="jumbotron">
+            <h1 class="display-4">Welcome to Dashboard!</h1>
+            <p class="lead">Keep a Digital Eye on Your Dependents</p>
+
+            <!-- Container for Parent Information -->
+            <div id="parentInformation" class="parent-info-container"></div>
+        </div>
+
+        <!-- Container for Child Information -->
+        <div id="childInformation" class="child-info-container"></div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- Your Dashboard script -->
+    <script type="module" src="js/dashboard.js" defer></script>
+    <script type="module" src="js/logout.js" defer></script>
+
+</body>
+
+</html>

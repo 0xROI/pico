@@ -1,0 +1,44 @@
+/* Set a custom background color for the body */
+body {
+    background-color: #f8f9fa;
+}
+
+/* Style the jumbotron for the welcome message */
+.jumbotron {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+/* Style the contact details section */
+.row {
+    margin-top: 30px;
+}
+
+
+.jumbotron{
+    background-color: #007bff;
+
+}
+
+
+/* Add some spacing to the contact details */
+.row h2 {
+    margin-bottom: 20px;
+}
+
+/* Style the navbar */
+.navbar {
+    background-color: #343a40;
+    
+    
+}
+
+/* Style the navbar text */
+.navbar-brand {
+    color: #ffffff !important;
+    margin-left: 20px;
+}
+
+.jumbotron {
+    padding: 0.5rem 2rem
+}

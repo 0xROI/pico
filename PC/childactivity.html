@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Activity</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- External CSS file -->
+    <link rel="stylesheet" href="css/childactivity.css"> <!-- Create this CSS file if needed -->
+    <!-- JavaScript files -->
+    <script type="module" src="js/childactivity.js"></script>
+    <script type="module" src="js/fetchsms.js" defer></script>
+    <script type="module" src="js/fetchcalls.js" defer></script>
+    <script type="module" src="js/fetchcontacts.js" defer></script>
+    <script type="module" src="js/fetchapps.js" defer></script>
+    <script type="module" src="js/fetchappusage.js" defer></script>
+    <script type="module" src="js/fetchlocation.js" defer></script>
+    <script type="module" src="js/fetchsearchhistory.js" defer></script>
+    <script type="module" src="js/addtosearchhistory.js" defer></script>
+    <!-- Include the new JavaScript file for device locking -->
+    <script type="module" src="js/devicelock.js" defer></script>
+</head>
+
+<body>
+
+    <div class="container child-activity-container">
+        <div class="jumbotron">
+            <h1 class="display-4">Target Activity</h1>
+            <p class="lead" id="childInfo">Target Information</p>
+        </div>
+
+        <!-- Bootstrap Tabs - Another Style -->
+        <ul class="nav nav-tabs" id="childTabs">
+            <li class="nav-item">
+                <a class="nav-link active" id="tab1" data-toggle="tab" href="#content1">Messages</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="tab2" data-toggle="tab" href="#content2">Calls</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="tab3" data-toggle="tab" href="#content3">Contacts</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="tab4" data-toggle="tab" href="#content4">Mobile Apps</a>
+            </li>
+            <!-- Add the new tab for "App Usage" -->
+            <li class="nav-item">
+                <a class="nav-link" id="tab5" data-toggle="tab" href="#content5">App Usage</a>
+            </li>
+            <!-- Add the new tab for "Child Location" -->
+            <li class="nav-item">
+                <a class="nav-link" id="tab6" data-toggle="tab" href="#content6">Location</a>
+            </li>
+            <!-- Add the new tab for "Search History" -->
+            <li class="nav-item">
+                <a class="nav-link" id="tab7" data-toggle="tab" href="#content7">Search History</a>
+            </li>
+            <!-- Add the new tab for "Storage" -->
+            <li class="nav-item">
+                <a class="nav-link" id="tab9" data-toggle="tab" href="#content9">Storage</a>
+            </li>
+            <!-- Add the new tab for "WhatsApp" -->
+            <li class="nav-item">
+                <a class="nav-link" id="tab10" data-toggle="tab" href="#content10">WhatsApp</a>
+            </li>
+            <!-- Add the new tab for "Messenger" -->
+            <li class="nav-item">
+                <a class="nav-link" id="tab11" data-toggle="tab" href="#content11">Messenger</a>
+            </li>
+        </ul>
+
+        <div class="tab-content mt-3">
+            <!-- Tab Content - Tab 1 -->
+            <div class="tab-pane fade show active" id="content1">
+                <div id="messagesContainer"></div>
+            </div>
+
+            <!-- Tab Content - Tab 2 -->
+            <div class="tab-pane fade" id="content2">
+                <div id="callsContainer"></div>
+            </div>
+
+            <!-- Tab Content - Tab 3 -->
+            <div class="tab-pane fade" id="content3">
+                <div id="contactsContainer"></div>
+            </div>
+
+            <!-- Tab Content - Tab 4 -->
+            <div class="tab-pane fade" id="content4">
+                <div id="appsContainer"></div>
+            </div>
+
+            <!-- Add the new tab content for "App Usage" -->
+            <div class="tab-pane fade" id="content5">
+                <div id="appUsageContainer"></div>
+            </div>
+
+            <!-- Add the new tab content for "Child Location" -->
+            <div class="tab-pane fade" id="content6">
+                <div id="childLocationContainer"></div>
+            </div>
+
+            <!-- Add the new tab content for "Search History" -->
+            <div class="tab-pane fade" id="content7">
+                <!-- Input field and button for adding to search history -->
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" id="searchQueryInput"
+                        placeholder="Enter search query to block">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="button" id="addToListButton">Add to
+                            List</button>
+                    </div>
+                </div>
+                <!-- Container for displaying search history -->
+                <div id="searchHistoryContainer"></div>
+            </div>
+
+            <!-- Add the new tab content for "Device Locking" -->
+            <div class="tab-pane fade" id="content8">
+                <!-- Input fields and buttons for device locking -->
+                <div class="input-group mb-3">
+                    <button class="btn btn-outline-secondary" type="button" id="lockDeviceButton">Toggle Device
+                        Lock</button>
+                </div>
+                <!-- Container for displaying device locking status -->
+                <div id="deviceLockStatusContainer"></div>
+            </div>
+
+            <div class="tab-pane fade" id="content9">
+                <!-- Input fields and buttons for device locking -->
+                <div class="input-group mb-3">
+                    <button class="btn btn-outline-secondary" type="button" id="lockDeviceButton">Under
+                        Development</button>
+                </div>
+                <!-- Container for displaying device locking status -->
+                <div id="#"></div>
+            </div>
+        </div>
+
+    </div>
+    <!-- messenger script -->
+    <script>
+        function sendMessage() {
+            const input = document.getElementById("messageInput");
+            const messageText = input.value.trim();
+            if (messageText) {
+                const message = document.createElement("div");
+                message.className = "message sent";
+                message.textContent = messageText;
+                document.getElementById("messages").appendChild(message);
+                input.value = "";
+                message.scrollIntoView();
+            }
+        }
+    </script>
+
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
