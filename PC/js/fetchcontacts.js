@@ -91,8 +91,7 @@ function fetchChildContacts() {
                         <h5 class="mb-1">${contactData.contactName}</h5>
                         <small>${contactData.contactType}</small>
                     </div>
-                    <p class="mb-1">Phone Number: ${contactData.phoneNumber}</p>
-                    <small>Email: ${contactData.email}</small>
+                    <p class="mb-1">Phone Number: ${contactData.contactNumber}</p>
                 `;
     
                 // Append list item to the list group
@@ -111,3 +110,4 @@ function fetchChildContacts() {
 
 // Call the function to fetch and display child contacts
 fetchChildContacts();
+
